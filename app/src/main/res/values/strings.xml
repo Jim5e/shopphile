@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">ecommerce</string>
+    <string name="deliver_to_nhome">Deliver to \nHome</string>
+    <string name="search">Search</string>
+    <string name="all_categories">All Categories</string>
+    <string name="new_arrival">New Arrival</string>
+    <string name="shop_now">Shop Now</string>
+    <string name="popular_products">Popular Products</string>
+
+    <string-array name="fruit_names_txt">
+        <item>Mango</item>
+        <item>Mango</item>
+        <item>Mango</item>
+        <item>Mango</item>
+        <item>Mango</item>
+    </string-array>
+
+    <string-array name="fruit_price_txt">
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
+    </string-array>
+    
+    <string-array name="fruit_status">
+        <item>Processing</item>
+        <item>Processing</item>
+        <item>Processing</item>
+        <item>Processing</item>
+        <item>Processing</item>
+    </string-array>
+
+    <string-array name="fruit_date_posted">
+        <item>23 Jan, 2024</item>
+        <item>23 Jan, 2024</item>
+        <item>23 Jan, 2024</item>
+        <item>23 Jan, 2024</item>
+        <item>23 Jan, 2024</item>
+    </string-array>
+
+</resources>

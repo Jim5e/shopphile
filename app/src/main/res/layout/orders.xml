@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF3F8"
+    tools:context=".orders">
+
+    <LinearLayout
+        android:id="@+id/goback"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/arrow_back_24px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:text="Orders"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/searchbarlayout"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/searchshape"
+        app:layout_constraintTop_toBottomOf="@+id/goback">
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="4dp"
+
+            android:background="@drawable/search_24px" />
+
+
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="4dp"
+            android:hint="@string/search" />
+        <ImageView
+            android:id="@+id/filters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/filter_alt_24px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/orders"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:background="@drawable/ordersbackground"
+        app:layout_constraintTop_toBottomOf="@+id/searchbarlayout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ordercard"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_margin="17dp"
+            android:background="@drawable/ordercardbackground"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/ordernumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Order #2931829"
+                android:textSize="12sp"
+                android:textColor="#8c826f" />
+
+            <TextView
+                android:id="@+id/dateplacedorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Placed on Nov 09, 2022"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+
+                />
+
+
+
+
+            <LinearLayout
+                android:id="@+id/ordercarddetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/card_bg" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/model"
+                        android:elevation="4dp"/>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="#8c826f"
+                        android:textSize="12sp"
+                        android:text="Zara"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#181513"
+                        android:textSize="12sp"
+                        android:text="Wool Blend Mini Skirt"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="#EFBE5B"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:text="$99"/>
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:background="@drawable/chevron_right_24px"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:weightSum="7">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            android:text="Ordered" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/baseline_check_circle_outline_24"/>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_weight="0.5"
+                        android:layout_marginTop="25dp"
+                        android:layout_width="5dp"
+                        android:layout_height="2dp"
+                        android:background="#4CAF50"/>
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            android:text="Processing" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/baseline_check_circle_outline_24"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_marginTop="25dp"
+                        android:layout_weight="0.5"
+                        android:layout_width="1dp"
+                        android:layout_height="2dp"
+                        android:background="@drawable/line"/>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            android:text="Packed" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/baseline_check_circle_outline_24"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_marginTop="25dp"
+                        android:layout_weight="0.5"
+                        android:layout_width="1dp"
+                        android:layout_height="2dp"
+                        android:background="@drawable/line"/>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            android:text="Shipped" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/baseline_check_circle_outline_24"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_marginTop="25dp"
+                        android:layout_weight="0.5"
+                        android:layout_width="1dp"
+                        android:layout_height="2dp"
+                        android:background="@drawable/line"/>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            android:text="Delivered" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/baseline_check_circle_outline_24"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ordercard2"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="17dp"
+            android:background="@drawable/ordercardbackground"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/ordernumber2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Order #2931829"
+                android:textSize="12sp"
+                android:textColor="#8c826f" />
+
+            <TextView
+                android:id="@+id/dateplacedorder2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Placed on Nov 09, 2022"
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:id="@+id/ordercarddetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/card_bg" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/model"
+                        android:elevation="4dp"/>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="#8c826f"
+                        android:textSize="12sp"
+                        android:text="Zara"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#181513"
+                        android:textSize="12sp"
+                        android:text="Wool Blend Mini Skirt"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="#EFBE5B"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:text="$99"/>
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:background="@drawable/chevron_right_24px"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:weightSum="7">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="Ordered" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/baseline_check_circle_outline_24"/>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_weight="0.5"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="5dp"
+                    android:layout_height="2dp"
+                    android:background="#4CAF50"/>
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="Processing" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/baseline_filter_tilt_shift_24"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_marginTop="25dp"
+                    android:layout_weight="0.5"
+                    android:layout_width="1dp"
+                    android:layout_height="2dp"
+                    android:background="@drawable/line"/>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="Packed" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/baseline_remove_circle_outline_24"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_marginTop="25dp"
+                    android:layout_weight="0.5"
+                    android:layout_width="1dp"
+                    android:layout_height="2dp"
+                    android:background="@drawable/line"/>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="Shipped" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/baseline_remove_circle_outline_24"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_marginTop="25dp"
+                    android:layout_weight="0.5"
+                    android:layout_width="1dp"
+                    android:layout_height="2dp"
+                    android:background="@drawable/line"/>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="Delivered" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/baseline_remove_circle_outline_24"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
